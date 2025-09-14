@@ -1,37 +1,64 @@
-/* Header container */
+/* ===== HEADER STYLING ===== */
 .site-header {
-  background-color: #2c2c2c;  /* dark gray header */
-  border-bottom: 1px solid #444;
-  padding: 10px 20px;
+  background-color: #2c2c2c;
+  padding: 12px 20px;
+  border-bottom: 2px solid #444;
+  position: sticky; /* makes it stay on top when scrolling */
+  top: 0;
+  z-index: 1000;
 }
 
-/* Flexbox to align title + nav */
 .site-header .wrapper {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 
-/* Blog title/logo */
+/* Logo */
+.site-logo img {
+  height: 40px;
+  width: auto;
+  margin-right: 15px;
+  vertical-align: middle;
+}
+
+/* Title */
 .site-title {
   font-size: 20px;
   font-weight: bold;
   color: #fff;
   text-decoration: none;
+  margin-right: 40px;
+  white-space: nowrap;
 }
 
-/* Nav menu */
-.site-nav {
+/* Tabs Navigation */
+.nav-tabs {
+  list-style: none;
   display: flex;
-  gap: 15px;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
 }
 
-.site-nav a {
+.nav-tabs a {
   color: #ddd;
+  padding: 8px 16px;
   text-decoration: none;
-  font-weight: 500;
+  border-radius: 6px 6px 0 0;
+  background-color: #3a3a3a;
+  transition: all 0.3s ease;
 }
 
-.site-nav a:hover {
+.nav-tabs a:hover {
+  background-color: #555;
   color: #fff;
+}
+
+.nav-tabs a.active {
+  background-color: #fff;
+  color: #2c2c2c;
+  font-weight: bold;
+  border: 1px solid #444;
+  border-bottom: none;
 }
