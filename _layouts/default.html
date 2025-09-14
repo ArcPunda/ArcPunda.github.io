@@ -1,15 +1,34 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
-  <head>
-    {%- include head.html -%}
-  </head>
-  <body>
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </main>
+<html lang="en">
+<head>
+  {% include head.html %}
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title">
+        <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
+      </h1>
+      <nav class="site-nav">
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <a href="{{ '/about' | relative_url }}">About</a>
+        <a href="{{ '/projects' | relative_url }}">Projects</a>
+        <a href="{{ '/blog' | relative_url }}">Blog</a>
+        <a href="{{ '/contact' | relative_url }}">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    {%- include footer.html -%}
-  </body>
+  <main class="site-content">
+    {{ content }}
+  </main>
+
+  <!-- Watermark -->
+  <img src="{{ '/assets/images/Yangyang.png' | relative_url }}" alt="Logo" class="watermark">
+
+  <footer class="site-footer">
+    <p>© {{ site.title }} {{ site.time | date: "%Y" }}</p>
+  </footer>
+</body>
 </html>
