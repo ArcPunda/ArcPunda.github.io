@@ -1,3 +1,10 @@
 title: "Glenn's Tech Blog"
 description: "A fresh graduate’s journey in IT – projects, tutorials, and learnings"
+
 theme: minima
+plugins:
+  - jekyll-feed
+
+# Add this
+include:
+  - assets/css/style.css
