@@ -1,10 +1,11 @@
-title: "Glenn's Tech Blog"
-description: "A fresh graduate’s journey in IT – projects, tutorials, and learnings"
+title: "ArcticPunda <Dev> Blog"
+description: "A fresh graduate’s journey in IT – projects, dumb stuffs, and improving myself as an IT professional"
 
 theme: minima
 plugins:
   - jekyll-feed
 
-# Add this
-include:
-  - assets/css/style.css
+minima:
+  skin: classic
+  custom_css:
+    - /assets/css/style.css
