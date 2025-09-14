@@ -11,3 +11,11 @@ a {
 a:hover {
   color: #00ffff;
 }
+
+.watermark {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  opacity: 0.6;
+  z-index: 9999;
+}
