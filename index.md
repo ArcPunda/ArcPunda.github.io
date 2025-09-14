@@ -32,3 +32,5 @@ title: "Home"
     <p>A fresh graduate’s journey in IT – projects, dumb stuffs, and improving myself as an IT professional.</p>
   </div>
 </div>
+
+<img src="{{ '/assets/images/Yangyang.png' | relative_url }}" alt="Logo" class="watermark">
