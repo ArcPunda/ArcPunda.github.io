@@ -1,28 +1,37 @@
-/* Background & text */
-body {
-  background-color: #f5f5f5;   /* light gray */
-  color: #222;                 /* readable text */
-}
-
-/* Header bar */
+/* Header container */
 .site-header {
-  background-color: #2c2c2c;   /* dark gray header */
+  background-color: #2c2c2c;  /* dark gray header */
   border-bottom: 1px solid #444;
+  padding: 10px 20px;
 }
 
-/* Blog title */
+/* Flexbox to align title + nav */
+.site-header .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Blog title/logo */
 .site-title {
-  color: #fff !important;
+  font-size: 20px;
   font-weight: bold;
-}
-
-/* Navigation links */
-.site-nav .page-link {
-  color: #fff !important;
-  margin-left: 15px;           /* spacing between links */
+  color: #fff;
   text-decoration: none;
 }
 
-.site-nav .page-link:hover {
-  color: #ffcc00;              /* yellow hover */
+/* Nav menu */
+.site-nav {
+  display: flex;
+  gap: 15px;
+}
+
+.site-nav a {
+  color: #ddd;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.site-nav a:hover {
+  color: #fff;
 }
