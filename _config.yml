@@ -1,11 +1,18 @@
 title: "ArcticPunda <Dev> Blog"
 description: "A fresh graduate’s journey in IT – projects, dumb stuffs, and improving myself as an IT professional"
 
+# Theme
 theme: minima
+
+# Plugins
 plugins:
   - jekyll-feed
 
+# Minima customizations
 minima:
   skin: classic
+  # Disable built-in header/nav so we can use our own
+  include_nav: false
+  # Keep your custom CSS
   custom_css:
     - /assets/css/style.css
