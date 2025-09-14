@@ -1,107 +1,55 @@
-/* ===== HEADER STYLING ===== */
-.site-header {
-  background-color: #2c2c2c;
-  padding: 12px 20px;
-  border-bottom: 2px solid #444;
-  position: sticky; /* makes it stay on top when scrolling */
-  top: 0;
-  z-index: 1000;
-}
-
-.site-header .wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-/* Logo */
-.site-logo img {
-  height: 40px;
-  width: auto;
-  margin-right: 15px;
-  vertical-align: middle;
-}
-
-/* Title */
-.site-title {
-  font-size: 20px;
-  font-weight: bold;
-  color: #fff;
-  text-decoration: none;
-  margin-right: 40px;
-  white-space: nowrap;
-}
-
-/* Tabs Navigation */
-.nav-tabs {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-tabs a {
-  color: #ddd;
-  padding: 8px 16px;
-  text-decoration: none;
-  border-radius: 6px 6px 0 0;
-  background-color: #3a3a3a;
-  transition: all 0.3s ease;
-}
-
-.nav-tabs a:hover {
-  background-color: #555;
-  color: #fff;
-}
-
-.nav-tabs a.active {
-  background-color: #fff;
-  color: #2c2c2c;
-  font-weight: bold;
-  border: 1px solid #444;
-  border-bottom: none;
-}
-
-/* ===== Custom Blog Layout ===== */
-
-/* Split page into 3 equal columns */
+/* Layout: 3 columns */
 .columns {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr; /* Left | Middle | Right */
+  grid-template-columns: 1fr 2fr 1fr; /* left 25%, middle 50%, right 25% */
   gap: 20px;
-  margin: 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
 }
 
-/* Column styling */
 .column {
   background: #f9f9f9;
   padding: 15px;
   border-radius: 8px;
 }
 
-/* Left column (navigation) */
-.left-col {
-  background: #f0f0f0;
+/* Header */
+.site-header {
+  background: #333;
+  color: #fff;
+  padding: 15px 0;
 }
 
-/* Middle column (main content) */
-.middle-col {
-  background: #ffffff;
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-/* Right column (about/side info) */
-.right-col {
-  background: #f7f7f7;
+.site-header a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
 }
 
-/* Watermark bottom-right */
+/* Footer */
+.site-footer {
+  text-align: center;
+  padding: 20px;
+  background: #333;
+  color: #fff;
+  margin-top: 40px;
+}
+
+/* Watermark */
 .watermark {
   position: fixed;
   bottom: 10px;
   right: 10px;
-  width: 100px;   /* adjust size */
+  width: 80px;
   opacity: 0.7;
-  pointer-events: none; /* prevents blocking clicks */
 }
-
