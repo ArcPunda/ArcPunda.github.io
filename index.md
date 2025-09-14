@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Home"
----
+--- 
 
 <div class="column">
   <h2>Left Column</h2>
