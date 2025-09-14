@@ -1,33 +1,28 @@
 /* Background & text */
 body {
   background-color: #f5f5f5;   /* light gray */
-  color: #222;                 /* dark gray text */
+  color: #222;                 /* readable text */
 }
 
 /* Header bar */
 .site-header {
   background-color: #2c2c2c;   /* dark gray header */
   border-bottom: 1px solid #444;
-  padding: 0.75rem 1rem;
 }
 
-/* Header title */
+/* Blog title */
 .site-title {
-  color: #fff !important;      /* blog title in white */
+  color: #fff !important;
   font-weight: bold;
 }
 
-/* Navigation menu */
-.site-nav {
-  margin-left: auto;           /* push nav items to the right */
-}
-
+/* Navigation links */
 .site-nav .page-link {
-  color: #fff !important;      /* make links white */
+  color: #fff !important;
   margin-left: 15px;           /* spacing between links */
   text-decoration: none;
 }
 
 .site-nav .page-link:hover {
-  color: #ffcc00;              /* hover highlight */
+  color: #ffcc00;              /* yellow hover */
 }
