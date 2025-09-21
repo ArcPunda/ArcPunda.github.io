@@ -11,9 +11,3 @@ plugins:
 # Minima customizations
 minima:
   skin: classic
-  # Disable built-in header/nav so we can use our own
-  include_nav: false
-  # Keep your custom CSS
-  custom_css:
-    - /css/style.css
-
