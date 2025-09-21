@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title | escape }} | {{ site.title | escape }}</title>
+    {{- seo -}}
+
+    <!-- Minima's main CSS -->
+    {{- stylesheet_link_tag "main" -}}
+
+    <!-- Your custom CSS -->
+    <link rel="stylesheet" href="{{ '/css/style.css' | relative_url }}">
+  </head>
+  <body>
+    <header class="site-header" role="banner">
+      {{ content }}
+    </header>
+    <main class="page-content" aria-label="Content">
+      {{ content }}
+    </main>
+    <footer class="site-footer">
+      {{ content }}
+    </footer>
+  </body>
+</html>
