@@ -15,4 +15,5 @@ minima:
   include_nav: false
   # Keep your custom CSS
   custom_css:
-    - /assets/css/style.css
+    - /css/style.css
+
