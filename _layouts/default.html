@@ -13,14 +13,17 @@
     <link rel="stylesheet" href="{{ '/css/style.css' | relative_url }}">
   </head>
   <body>
-    <header class="site-header" role="banner">
-      {{ content }}
-    </header>
+    <!-- Header -->
+    {%- include header.html -%}
+
+    <!-- Main content -->
     <main class="page-content" aria-label="Content">
-      {{ content }}
+      <div class="wrapper">
+        {{ content }}
+      </div>
     </main>
-    <footer class="site-footer">
-      {{ content }}
-    </footer>
+
+    <!-- Footer -->
+    {%- include footer.html -%}
   </body>
 </html>
