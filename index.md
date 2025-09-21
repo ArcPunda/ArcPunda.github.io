@@ -3,20 +3,6 @@ layout: default
 title: "Home"
 --- 
 
-<style>
-  .columns {
-    display: flex;
-    gap: 20px; /* spacing between columns */
-  }
-  .column {
-    flex: 1; /* make columns equal width */
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background: #fafafa;
-  }
-</style>
-
 <div class="columns">
   <div class="column">
     <h2>Left Column</h2>
