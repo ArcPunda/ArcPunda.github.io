@@ -1,0 +1,6 @@
+---
+# Only front matter so Jekyll processes this as SCSS
+---
+
+@import "minima";       // load minima’s default styles
+@import "style.css";    // load your custom styles (from /css/style.css)
